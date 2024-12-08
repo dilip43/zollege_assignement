@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+  --input-border: #cccccc;
+  --table-border: #dddddd;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #1e90ff;
+  --input-border: #444444;
+  --table-border: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.payout-calculator-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.default-payout {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 5px 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.payout-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.payout-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.payout-table th,
+.payout-table td {
+  padding: 10px;
+  border: 1px solid var(--table-border);
+  text-align: left;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.payout-table th {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.payout-table td input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.total-payout {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.export-buttons {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

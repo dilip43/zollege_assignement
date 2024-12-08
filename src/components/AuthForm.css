@@ -1,0 +1,129 @@
+/* AuthForm.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.auth-loading {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+
+.auth-input {
+  width: 92%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: #3498db;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.auth-btn-login {
+  background: #3498db;
+  color: #fff;
+}
+
+.auth-btn-login:hover {
+  background: #2980b9;
+}
+
+.auth-btn-signup {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.auth-btn-signup:hover {
+  background: #27ae60;
+}
+
+.auth-btn-google {
+  width: 100%;
+  background: #db4437;
+  color: #fff;
+}
+
+.auth-btn-google:hover {
+  background: #c0392b;
+}
+
+.auth-divider {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #aaa;
+  position: relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.auth-divider::before {
+  left: 0;
+}
+
+.auth-divider::after {
+  right: 0;
+}
